@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - [Ваше Имя]</title>
+    <style>
+        /* --- Общие стили --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- Стили для шапки --- */
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+
+        .header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+            color: #3498db;
+        }
+
+        /* --- Стили для контактов --- */
+        .contacts {
+            text-align: center;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px 20px;
+			color: #555;
+			font-size: 1em;
+        }
+
+        .contacts span {
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 5px; 
+        }
+
+
+        /* --- Стили для секций --- */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 1.5em;
+            color: #2c3e50;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            margin-bottom: 15px;
+        }
+        
+        /* --- Стили для опыта работы и проектов --- */
+        .job, .project {
+            margin-bottom: 20px;
+        }
+
+        .job h3, .project h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .job .period, .project .tech-stack {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* --- Стили для навыков --- */
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list li {
+            background-color: #ecf0f1;
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        /* --- Адаптивность --- */
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                padding: 15px;
+                border-radius: 0;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+            .contacts {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- ======================= ШАПКА: ИМЯ И ДОЛЖНОСТЬ ======================= -->
+        <header class="header">
+            <h1>Кунахов Андрей</h1>
+            <p>Backend-разработчик (Go)</p>
+        </header>
+        <!-- ======================= КОНТАКТЫ И ССЫЛКИ ======================= -->
+        <div class="contacts">
+            <span><b>Email:</b> kunahov_aa@mail.ru</span>
+			<span><b>Phone number:</b> +79204363986</span>
+            <span><b>Telegram:</b> @andreykunakhov2002</span>
+            <span><b>GitHub:</b> https://github.com/KunakhovAndrey</span>
+        </div>
+
+        <main>
+            <!-- ======================= СЕКЦИЯ "О СЕБЕ" (SUMMARY) ======================= -->
+            <section class="section">
+                <h2>О себе</h2>
+                <p>
+                    Backend-разработчик с 3-летним опытом создания и поддержки веб-приложений и API. Специализируюсь на Go и C#. Умею работать с Docker, PostgreSQL и SQLite. Ищу возможность присоединиться к продуктовой команде для решения сложных технических задач и профессионального роста.
+                </p>
+            </section>
+
+            <!-- ======================= СЕКЦИЯ "НАВЫКИ" ======================= -->
+            <section class="section">
+                <h2>Ключевые навыки</h2>
+                <ul class="skills-list">
+                    <li>Go</li>
+                    <li>C#</li>
+                    <li>gRPC</li>
+                    <li>SQLite</li>
+                    <li>Docker</li>
+                    <li>Git</li>
+                    <li>REST API</li>
+                    <li>PostgreSQL</li>
+					<li>YouTrack</li>
+                </ul>
+            </section>
+
+            <!-- ======================= СЕКЦИЯ "ОПЫТ РАБОТЫ" ======================= -->
+            <section class="section">
+                <h2>Опыт работы</h2>
+
+                <!-- Пример места работы 1 -->
+                <div class="job">
+                    <h3>ПАО "Яковлев" - "Центр комплексирования", Москва — Golang-разработчик</h3>
+                    <p class="period">май 2022 – по настоящее время</p>
+                    <ul>					    
+                        <li>Реализовал сервис конвертации навигационных данных, что сократило затраты компании и исключило зависимость от внешних поставщиков.</li>
+                        <li>Разработал сервис автоматизированной валидации аэронавигационной базы данных.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ======================= СЕКЦИЯ "ОБРАЗОВАНИЕ" ======================= -->
+            <section class="section">
+                <h2>Образование</h2>
+                <p>
+                    <strong>Московский авиационный институт (национальный исследовательский университет)</strong><br>
+                    Факультет авиастроения / инженер-конструктор<br>
+                    Годы учебы: 2020 – 2024 <b>(бакалавриат)</b>
+                </p>
+				<p>
+                    <strong>Московский авиационный институт (национальный исследовательский университет)</strong><br>
+                    Факультет авиастроения / инженер-конструктор<br>
+                    Годы учебы: 2024 – по настоящее время <b>(магистратура)</b>
+                </p>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
